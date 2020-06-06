@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://ChaosYX.github.io">
-  <title>Chaos_YX&#39;s blogs</title>
+  <title>Archives: 2020/1 | Chaos_YX&#39;s blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="针对某些地区对github的DNS封锁可以使用以下方法解决1.修改本地hosts文件在C:\Windows\System32\drivers\etc的hosts文件中加入下面两行12192.30.253.112 github.com192.30.253.122 ssh.github.com 其中IP地址使用https://www.ipaddress.com/ 查询github的IP地址和SSH服务">
-<meta property="og:type" content="article">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="Chaos_YX&#39;s blogs">
-<meta property="og:url" content="http://ChaosYX.github.io/2019/07/27/Git的初始设置/index.html">
+<meta property="og:url" content="http://ChaosYX.github.io/archives/2020/01/index.html">
 <meta property="og:site_name" content="Chaos_YX&#39;s blogs">
-<meta property="og:description" content="针对某些地区对github的DNS封锁可以使用以下方法解决1.修改本地hosts文件在C:\Windows\System32\drivers\etc的hosts文件中加入下面两行12192.30.253.112 github.com192.30.253.122 ssh.github.com 其中IP地址使用https://www.ipaddress.com/ 查询github的IP地址和SSH服务">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-16T14:34:52.621Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chaos_YX&#39;s blogs">
-<meta name="twitter:description" content="针对某些地区对github的DNS封锁可以使用以下方法解决1.修改本地hosts文件在C:\Windows\System32\drivers\etc的hosts文件中加入下面两行12192.30.253.112 github.com192.30.253.122 ssh.github.com 其中IP地址使用https://www.ipaddress.com/ 查询github的IP地址和SSH服务">
   
     <link rel="alternative" href="/atom.xml" title="Chaos_YX&#39;s blogs" type="application/atom+xml">
   
@@ -154,152 +150,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Git的初始设置" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-    <div class="article-entry" itemprop="articleBody">
+    
       
-        <h2 id="针对某些地区对github的DNS封锁可以使用以下方法解决"><a href="#针对某些地区对github的DNS封锁可以使用以下方法解决" class="headerlink" title="针对某些地区对github的DNS封锁可以使用以下方法解决"></a>针对某些地区对github的DNS封锁可以使用以下方法解决</h2><h3 id="1-修改本地hosts文件"><a href="#1-修改本地hosts文件" class="headerlink" title="1.修改本地hosts文件"></a>1.修改本地hosts文件</h3><p>在C:\Windows\System32\drivers\etc的hosts文件中加入下面两行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">192.30.253.122 ssh.github.com</span><br></pre></td></tr></table></figure></p>
-<p>其中IP地址使用<a href="https://www.ipaddress.com/" target="_blank" rel="noopener">https://www.ipaddress.com/</a> 查询github的IP地址和SSH服务器的IP地址</p>
-<h3 id="2-使用Git-Bash命令行连接github"><a href="#2-使用Git-Bash命令行连接github" class="headerlink" title="2.使用Git Bash命令行连接github"></a>2.使用Git Bash命令行连接github</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br></pre></td><td class="code"><pre><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T -p 443 git@ssh.github.com</span></span><br><span class="line">ssh: connect to host ssh.github.com port 443: Connection timed out</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -vT git@github.com</span></span><br><span class="line">OpenSSH_7.9p1, OpenSSL 1.1.1a  20 Nov 2018</span><br><span class="line">debug1: Reading configuration data /etc/ssh/ssh_config</span><br><span class="line">debug1: Connecting to github.com [192.30.253.112] port 22.</span><br><span class="line">debug1: Connection established.</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_rsa type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_rsa-cert type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_dsa type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_dsa-cert type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_ecdsa type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_ecdsa-cert type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_ed25519 type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_ed25519-cert type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_xmss type -1</span><br><span class="line">debug1: identity file /c/Users/74410/.ssh/id_xmss-cert type -1</span><br><span class="line">debug1: Local version string SSH-2.0-OpenSSH_7.9</span><br><span class="line">debug1: Remote protocol version 2.0, remote software version babeld-c6e8f0d0</span><br><span class="line">debug1: no match: babeld-c6e8f0d0</span><br><span class="line">debug1: Authenticating to github.com:22 as 'git'</span><br><span class="line">debug1: SSH2_MSG_KEXINIT sent</span><br><span class="line">debug1: SSH2_MSG_KEXINIT received</span><br><span class="line">debug1: kex: algorithm: curve25519-sha256</span><br><span class="line">debug1: kex: host key algorithm: rsa-sha2-512</span><br><span class="line">debug1: kex: server-&gt;client cipher: chacha20-poly1305@openssh.com MAC: &lt;implicit&gt; compression: none</span><br><span class="line">debug1: kex: client-&gt;server cipher: chacha20-poly1305@openssh.com MAC: &lt;implicit&gt; compression: none</span><br><span class="line">debug1: expecting SSH2_MSG_KEX_ECDH_REPLY</span><br><span class="line">debug1: Server host key: ssh-rsa SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8</span><br><span class="line">The authenticity of host 'github.com (192.30.253.112)' can't be established.</span><br><span class="line">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)? y</span><br><span class="line">Please type 'yes' or 'no': yes</span><br><span class="line">Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.</span><br><span class="line">debug1: rekey after 134217728 blocks</span><br><span class="line">debug1: SSH2_MSG_NEWKEYS sent</span><br><span class="line">debug1: expecting SSH2_MSG_NEWKEYS</span><br><span class="line">debug1: SSH2_MSG_NEWKEYS received</span><br><span class="line">debug1: rekey after 134217728 blocks</span><br><span class="line">debug1: Will attempt key: /c/Users/74410/.ssh/id_rsa</span><br><span class="line">debug1: Will attempt key: /c/Users/74410/.ssh/id_dsa</span><br><span class="line">debug1: Will attempt key: /c/Users/74410/.ssh/id_ecdsa</span><br><span class="line">debug1: Will attempt key: /c/Users/74410/.ssh/id_ed25519</span><br><span class="line">debug1: Will attempt key: /c/Users/74410/.ssh/id_xmss</span><br><span class="line">debug1: SSH2_MSG_EXT_INFO received</span><br><span class="line">debug1: kex_input_ext_info: server-sig-algs=&lt;ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-rsa,rsa-sha2-512,rsa-sha2-256,ssh-dss&gt;</span><br><span class="line">debug1: SSH2_MSG_SERVICE_ACCEPT received</span><br><span class="line">debug1: Authentications that can continue: publickey</span><br><span class="line">debug1: Next authentication method: publickey</span><br><span class="line">debug1: Trying private key: /c/Users/74410/.ssh/id_rsa</span><br><span class="line">debug1: Trying private key: /c/Users/74410/.ssh/id_dsa</span><br><span class="line">debug1: Trying private key: /c/Users/74410/.ssh/id_ecdsa</span><br><span class="line">debug1: Trying private key: /c/Users/74410/.ssh/id_ed25519</span><br><span class="line">debug1: Trying private key: /c/Users/74410/.ssh/id_xmss</span><br><span class="line">debug1: No more authentication methods to try.</span><br><span class="line">git@github.com: Permission denied (publickey).</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T harrygoldfish@github.com</span></span><br><span class="line">harrygoldfish@github.com: Permission denied (publickey).</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T git@github.com</span></span><br><span class="line">git@github.com: Permission denied (publickey).</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T -p 443 git@ssh.github.com</span></span><br><span class="line">ssh: connect to host ssh.github.com port 443: Connection timed out</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">eval</span> <span class="string">"<span class="variable">$(ssh-agent -s)</span>"</span></span></span><br><span class="line">Agent pid 3016</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add -l -E md5</span></span><br><span class="line">The agent has no identities.</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add ~/.ssh/id_rsa</span></span><br><span class="line">/c/Users/74410/.ssh/id_rsa: No such file or directory</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add ~/.ssh</span></span><br><span class="line">Error loading key "/c/Users/74410/.ssh": Is a directory</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> cat ~/.ssh/id_rsa.pub</span></span><br><span class="line">cat: /c/Users/74410/.ssh/id_rsa.pub: No such file or directory</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add</span></span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> openssl version</span></span><br><span class="line">OpenSSL 1.1.1a  20 Nov 2018</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add -l</span></span><br><span class="line">The agent has no identities.</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-keygen -t rsa -C <span class="string">"744108413@qq.com"</span></span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/74410/.ssh/id_rsa):</span><br><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Passphrases do not match.  Try again.</span><br><span class="line">Enter passphrase (empty for no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved in /c/Users/74410/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/74410/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:dQadl3BFHy9ohFt1MU1mw4UDTDUg5gs5cVk7XPJdwxQ 744108413@qq.com</span><br><span class="line">The key's randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|        . =BOBXE#|</span><br><span class="line">|         *o==B=OX|</span><br><span class="line">|        + ooO.o.+|</span><br><span class="line">|         +.= . . |</span><br><span class="line">|        S .      |</span><br><span class="line">|                 |</span><br><span class="line">|                 |</span><br><span class="line">|                 |</span><br><span class="line">|                 |</span><br><span class="line">+----[SHA256]-----+</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~</span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> ~/.ssh</span></span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ls</span></span><br><span class="line">id_rsa  id_rsa.pub  known_hosts</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add -l</span></span><br><span class="line">The agent has no identities.</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> cat ~/.ssh/id_rsa.pub</span></span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDB8JRPpVVV+qKQrFC2RpgwNu+r0WFx17xBFGDBAqkrxItpw2y/Lnvylo4hjxTNz78EULmmLyKhOIQeb7JDaZM6azl4F44D5OYGTv4zfdQXCHgGMLdeRwCuSjlQTSRN0gp14tqM2TOkhAAIyykvwPWq0KEYJQvSseTSMaeVluiviFvOvIhl9RcGrW3XgHZaOcZoz5QkDTvbOZW9wAJymnt+pz9fWl4nxkDF33vRPsFOM0lHKnQ3hYLDzsKxD/mhiwVtlRCDRVFR7p+YCZUilhakWy/dIBIFsAHAHCsh+mOBBr+DEPSZsEsahDz48yKollX1GhwQd6rbu94Jn67qYIz 744108413@qq.com</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add ~/.ssh/id_rsa</span></span><br><span class="line">Identity added: /c/Users/74410/.ssh/id_rsa (744108413@qq.com)</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh-add -l</span></span><br><span class="line">2048 SHA256:dQadl3BFHy9ohFt1MU1mw4UDTDUg5gs5cVk7XPJdwxQ 744108413@qq.com (RSA)</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ls -al ~/.ssh</span></span><br><span class="line">total 26</span><br><span class="line">drwxr-xr-x 1 74410 197609    0 3月  26 21:45 ./</span><br><span class="line">drwxr-xr-x 1 74410 197609    0 3月  26 21:13 ../</span><br><span class="line">-rw-r--r-- 1 74410 197609 1823 3月  26 21:45 id_rsa</span><br><span class="line">-rw-r--r-- 1 74410 197609  398 3月  26 21:45 id_rsa.pub</span><br><span class="line">-rw-r--r-- 1 74410 197609  407 3月  26 21:23 known_hosts</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> clip &lt; ~/.ssh/id_rsa.pub</span></span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T -p 443 git@ssh.github.com</span></span><br><span class="line">ssh: connect to host ssh.github.com port 443: Connection timed out</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ping github.com</span></span><br><span class="line"></span><br><span class="line">▒▒▒▒ Ping github.com [192.30.253.112] ▒▒▒▒ 32 ▒ֽڵ▒▒▒▒▒:</span><br><span class="line">▒▒▒▒ 192.30.253.112 ▒Ļظ▒: ▒ֽ▒=32 ʱ▒▒=300ms TTL=48</span><br><span class="line">▒▒▒▒ 192.30.253.112 ▒Ļظ▒: ▒ֽ▒=32 ʱ▒▒=299ms TTL=48</span><br><span class="line">▒▒▒▒ 192.30.253.112 ▒Ļظ▒: ▒ֽ▒=32 ʱ▒▒=299ms TTL=48</span><br><span class="line">▒▒▒▒ 192.30.253.112 ▒Ļظ▒: ▒ֽ▒=32 ʱ▒▒=299ms TTL=48</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T git@github.com</span></span><br><span class="line">The authenticity of host '[ssh.github.com]:443 ([192.30.253.122]:443)' can't be established.</span><br><span class="line">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)? yes</span><br><span class="line">Warning: Permanently added '[ssh.github.com]:443,[192.30.253.122]:443' (RSA) to the list of known hosts.</span><br><span class="line">Hi harrygoldfish! You've successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> ssh -T -p 443 git@ssh.github.com</span></span><br><span class="line">Hi harrygoldfish! You've successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 ~/.ssh</span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global http.proxy 127.0.0.1:1087</span></span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 /e/1book</span><br><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br><span class="line">Initialized empty Git repository in E:/1book/.git/</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 /e/1book (master)</span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/duoergun0729/1book.git</span></span><br><span class="line">Cloning into '1book'...</span><br><span class="line">fatal: unable to access 'https://github.com/duoergun0729/1book.git/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 /e/1book (master)</span><br><span class="line"><span class="meta">$</span><span class="bash"> yum update nss</span></span><br><span class="line">bash: yum: command not found</span><br><span class="line"></span><br><span class="line">74410@DESKTOP-FNPHBR6 MINGW64 /e/1book (master)</span><br><span class="line"><span class="meta">$</span><span class="bash"> env GIT_SSL_NO_VERIFY=<span class="literal">true</span> git <span class="built_in">clone</span> https://github.com/duoergun0729/1book.git</span></span><br><span class="line">Cloning into '1book'...</span><br><span class="line">remote: Enumerating objects: 12175, done.</span><br><span class="line">Receiving objects:   1% (181/12175), 82.18 MiB | 240.00 KiB/s</span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">#使用SSH方式可以下载大文件，不容易失败git@github.com:duoergun0729/2book.git</span></span></span><br></pre></td></tr></table></figure>
-
       
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/01/01/研究生经验/" class="archive-article-date">
+  	<time datetime="2020-01-01T10:54:10.682Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
+</a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://ChaosYX.github.io/2019/07/27/Git的初始设置/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/10/07/完备的 AI 学习路线/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/07/24/使用Google、kaggle云GPU运算/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -322,8 +209,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
